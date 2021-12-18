@@ -1,0 +1,26 @@
+{
+  "name": "cypress-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:dashboard": "npx cypress run --record --key e3a68df2-ca8c-4019-b7be-2f099007445e"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cryofbb/Cypress-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cryofbb/Cypress-2/issues"
+  },
+  "homepage": "https://github.com/Cryofbb/Cypress-2#readme",
+  "dependencies": {
+    "cypress": "^9.1.1"
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.1.0",
+    "cypress-file-upload": "^5.0.8"
+  }
+}

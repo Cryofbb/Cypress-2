@@ -1,0 +1,19 @@
+{
+  "priceRegular": "100",
+  "priceVIP": "200",
+  "movieTitle1": "Matrix",
+  "movieTime1": "136",
+  "movieDescription1": "The Matrix is an American media franchise created by writers-directors the Wachowskis and producer Joel Silver.",
+  "movieCountry1": "USA",
+  "movieTitle2": "Matrix 2",
+  "movieTime2": "90",
+  "movieDescription2": "The Matrix is an American media franchise created by writers-directors",
+  "movieCountry2": "USA",
+  "hallName1": "TestHall",
+  "rows1": "15",
+  "seats1": "15",
+  "hallName2": "TestHall2",
+  "rows2": "5",
+  "seats2": "10",
+  "hall4sales": "Зал1"
+}
