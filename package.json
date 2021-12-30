@@ -16,11 +16,9 @@
     "url": "https://github.com/Cryofbb/Cypress-2/issues"
   },
   "homepage": "https://github.com/Cryofbb/Cypress-2#readme",
-  "dependencies": {
-    "cypress": "^9.1.1"
-  },
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.1.0",
+    "cypress": "^9.2.0",
     "cypress-file-upload": "^5.0.8"
   }
 }
