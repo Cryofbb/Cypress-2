@@ -6,7 +6,8 @@
   "scripts": {
     "cy:dashboard": "npx cypress run --record --key e3a68df2-ca8c-4019-b7be-2f099007445e",
     "cy:spec1": "cypress run --spec 'cypress/integration/login.spec.js' --record --key e3a68df2-ca8c-4019-b7be-2f099007445e",
-    "cy:spec2": "cypress run --spec 'cypress/integration/hall.spec.js' --record --key e3a68df2-ca8c-4019-b7be-2f099007445e"
+    "cy:spec2": "cypress run --spec 'cypress/integration/hall.spec.js' --record --key e3a68df2-ca8c-4019-b7be-2f099007445e",
+    "cy:parallel": "npm run cy:spec1 -- --browser chrome --group Spec1 --ci-build-id 1 & npm run cy:spec2 -- --browser chrome --group Spec2 --ci-build-id 1"
   },
   "repository": {
     "type": "git",
