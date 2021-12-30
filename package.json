@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:dashboard": "npx cypress run --record --key e3a68df2-ca8c-4019-b7be-2f099007445e"
+    "cy:dashboard": "npx cypress run --record --key e3a68df2-ca8c-4019-b7be-2f099007445e",
+    "cy:spec1": "cypress run --spec 'cypress/integration/login.spec.js' --record --key e3a68df2-ca8c-4019-b7be-2f099007445e",
+    "cy:spec2": "cypress run --spec 'cypress/integration/hall.spec.js' --record --key e3a68df2-ca8c-4019-b7be-2f099007445e"
   },
   "repository": {
     "type": "git",
