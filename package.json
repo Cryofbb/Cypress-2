@@ -5,9 +5,17 @@
   "main": "index.js",
   "scripts": {
     "cy:dashboard": "npx cypress run --record --key e3a68df2-ca8c-4019-b7be-2f099007445e",
-    "cy:spec2": "cypress run --spec 'cypress/integration/login.spec.js' --record --key e3a68df2-ca8c-4019-b7be-2f099007445e",
-    "cy:spec1": "cypress run --spec 'cypress/integration/petshop.spec.js' --record --key e3a68df2-ca8c-4019-b7be-2f099007445e",
-    "cy:parallel": "start npm run cy:spec1 -- --browser chrome --group Spec1 --ci-build-id 15 & npm run cy:spec2 -- --browser electron  --group Spec2 --ci-build-id 15"
+    "cy:electron": "cypress run --browser electron",
+    "cy:chrome": "cypress run --browser chrome",
+    "cy:edge ": "cypress run --browser edge",
+    "cy:login": "cypress run --spec 'cypress/integration/login/login.spec.js' --record --key e3a68df2-ca8c-4019-b7be-2f099007445e",
+    "cy:petshop": "cypress run --spec 'cypress/integration/login/petshop.spec.js' --record --key e3a68df2-ca8c-4019-b7be-2f099007445e",
+    "cy:hall": "cypress run --spec 'cypress/integration/login/hall/hall.spec.js' --record --key e3a68df2-ca8c-4019-b7be-2f099007445e",
+    "cy:movie": "cypress run --spec 'cypress/integration/login/hall/movie.spec.js' --record --key e3a68df2-ca8c-4019-b7be-2f099007445e",
+    "cy:loginFolder": "cypress run --spec 'cypress/integration/login/*' --record --key e3a68df2-ca8c-4019-b7be-2f099007445e",
+    "cy:hallFolder": "cypress run --spec 'cypress/integration/hall/*' --record --key e3a68df2-ca8c-4019-b7be-2f099007445e",
+    "cy:parallel": "start npm run cy:petshop -- --browser chrome --group Spec1 --ci-build-id 15 & npm run cy:login -- --browser electron  --group Spec2 --ci-build-id 15",
+    "cy:parallelfolder": "start npm run cy:loginFolder -- --browser chrome --group Login --ci-build-id 2 & npm run cy:hallFolder -- --browser electron  --group Hall --ci-build-id 2"
   },
   "repository": {
     "type": "git",
